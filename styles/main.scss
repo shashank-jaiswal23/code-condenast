@@ -1,0 +1,162 @@
+@import "reset.scss";
+@import "consts.scss";
+@import "type.scss";
+@import "util.scss";
+@import "swiper.scss";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -moz-font-feature-settings: "kern" 1;
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  background-color: black;
+  color: white;
+}
+
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+.rich-text,
+.text-group {
+}
+
+[data-reach-dialog-overlay] {
+  z-index: 999;
+}
+
+body [data-reach-dialog-content] {
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0);
+
+  .list-item {
+    padding: 4rem 2rem;
+  }
+}
+
+.no-margin p {
+  margin-bottom: 0;
+}
+.no-indent p {
+  text-indent: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+button:active {
+  outline: none;
+}
+
+::selection {
+  background-color: $black;
+  color: #fff;
+}
+
+img,
+video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bgc-b {
+  background-color: black;
+}
+
+.bgc-g {
+  background-color: #2d2e2f;
+}
+
+.bgc-light-grey {
+  background-color: #caccce;
+}
+
+.absolute-image img,
+figure.absolute-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  object-fit: cover;
+}
+
+.absolute-video {
+  video,
+  figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+  }
+}
+
+.bb1 {
+  border-bottom: 1px solid black;
+}
+
+.c-b {
+  color: black;
+}
+
+.main-section {
+  background-color: black;
+}
+
+.text-block h3 {
+  margin-top: 3rem;
+}
+
+.mobile-list-item {
+  top: 0;
+  background-color: black;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  z-index: 100;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+select {
+  text-transform: uppercase;
+  color: white;
+  padding: 0;
+  text-align: center;
+  padding-right: 5px;
+  height: 21px;
+}
+
+@media (max-width: 760px) {
+  #mobile-nav {
+    display: block;
+  }
+
+  select {
+    color: black;
+    margin-bottom: 1rem;
+  }
+}
